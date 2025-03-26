@@ -11,9 +11,9 @@ const Chat = () => {
             setMessages((messages) => [...messages, message])
         })
 
-        socket.on('group_message', ({message, group}) =>{
-            setMessages((messages) => [...messages, `${group}: ${message}`])
-        })
+        // socket.on('group_message', ({message, group}) =>{
+        //     setMessages((messages) => [...messages, `${group}: ${message}`])
+        // })
 
         socket.emit("JOIN_SOCKET", {_id: "3637gdj4674dhljda"})
     }, [])
