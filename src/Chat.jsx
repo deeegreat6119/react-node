@@ -7,8 +7,9 @@ const Chat = () => {
     const messageRef = useRef("")
     const [messages, setMessages] = useState([])
     useEffect(() => {
-        socket.on('send_Message', (message) => {
-            setMessages((messages) => [...messages, message])
+        socket.on('send_Message', ({ message }) => {
+            setMessages((messages) => [...messages, message]);
+
         })
 
         // socket.on('group_message', ({message, group}) =>{
@@ -23,7 +24,8 @@ const Chat = () => {
         if (message) {
             // emit message to server
             // socket.emit('send_Message', message)
-            socket.emit('send_Message', {message, _id: "3637gdj4674dthljda"})
+            socket.emit('send_Message', { message, _id: "3637gdj4674dthljda" });
+
             setMessages((messages) => [...messages, message])
             messageRef.current.value = ''
         }
