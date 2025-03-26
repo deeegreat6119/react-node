@@ -1,7 +1,7 @@
 import { BrowserRouter, Route, Routes } from "react-router";
 import Home from "./Home";
 import Signin from "./Signin";
-import Profile from "./profile";
+import Profile from "./Profile";
 import AuthGuard from "./AuthGuard";
 import Chat from "./Chat";
 
