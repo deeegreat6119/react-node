@@ -1,0 +1,348 @@
+/* App.css */
+*{
+  margin: 0%;
+  padding: 0%;
+  box-sizing: border-box;
+}
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f9;
+}
+
+.profile-box{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  /* width: 90dvh; */
+  gap: 30px;
+  margin-bottom: 20px;
+}
+
+.profile-container {
+  background-color: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 400px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  /* margin: 50px auto; */
+  overflow: hidden;
+}
+
+.profile-header {
+  background-color: #007bff;
+  color: #ffffff;
+  padding: 20px;
+  text-align: center;
+}
+
+.profile-header h1 {
+  margin: 0;
+  font-size: 24px;
+}
+
+.profile-content {
+  padding: 20px;
+}
+
+.profile-image {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.profile-image img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  border: 4px solid #007bff;
+}
+
+.profile-details {
+  font-size: 16px;
+  color: #333333;
+}
+
+.profile-details p {
+  margin: 10px 0;
+}
+
+.profile-details strong {
+  color: #007bff;
+}
+/* General styles */
+body {
+  margin: 0;
+  font-family: 'Arial', sans-serif;
+  background: linear-gradient(135deg, #6a11cb, #2575fc); /* Gradient background */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  color: #333;
+}
+
+/* Container for the sign-in box */
+.signin-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+}
+
+/* Sign-in box */
+.signin-box {
+  background: white;
+  padding: 2rem;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  width: 100%;
+  max-width: 400px;
+  text-align: center;
+}
+
+/* Form title */
+.signin-box h1 {
+  margin-bottom: 1.5rem;
+  font-size: 2rem;
+  color: #333;
+}
+
+/* Input group (icon + input) */
+.input-group {
+  display: flex;
+  align-items: center;
+  margin-bottom: 1rem;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  padding: 0.5rem;
+  background: #f9f9f9;
+}
+
+/* Icons */
+.input-group i {
+  margin: 0 0.5rem;
+  color: #777;
+}
+
+/* Input fields */
+.signin-input {
+  width: 100%;
+  padding: 0.5rem;
+  border: none;
+  outline: none;
+  background: transparent;
+  font-size: 1rem;
+}
+
+/* Submit button */
+.signin-button {
+  width: 100%;
+  padding: 0.75rem;
+  border: none;
+  border-radius: 5px;
+  background: #6a11cb;
+  color: white;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.signin-button:hover {
+  background: #2575fc;
+}
+
+/* Loading state */
+.signin-button:disabled {
+  background: #ccc;
+  cursor: not-allowed;
+}
+
+/* style for profile page  */
+/* Profile.css */
+.container {
+  max-width: 50dvw;
+  margin: 0 auto;
+  padding: 20px;
+  font-family: 'Arial', sans-serif;
+  background-color: #f5f5f5;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.header {
+  text-align: center;
+  color: #333;
+  margin-bottom: 30px;
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.profileSection {
+  display: flex;
+  align-items: center;
+  width: 30dvw;
+  gap: 30px;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.imageContainer {
+  flex: 0 0 150px;
+}
+
+.profileImage {
+  width: 100%;
+  border-radius: 50%;
+  border: 4px solid #fff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.detailsContainer {
+  flex: 1;
+}
+
+.name {
+  margin: 0 0 10px;
+  color: #333;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.detail {
+  margin: 10px 0;
+  color: #555;
+  font-size: 1rem;
+}
+
+.detail strong {
+  color: #333;
+  font-weight: bold;
+}
+
+.logoutButton {
+  display: block;
+  width: 100%;
+  max-width: 200px;
+  margin: 20px auto 0;
+  padding: 10px 20px;
+  background-color: #ff4d4d;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.logoutButton:hover {
+  background-color: #e60000;
+}
+
+/* FOR CHAT */
+/* Main container */
+.chat-container {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  max-width: 600px;
+  margin: 0 auto;
+  background: #f8f9fa;
+  border: 1px solid #e9ecef;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.08);
+}
+
+/* Messages area */
+.messages-container {
+  flex: 1;
+  padding: 20px;
+  overflow-y: auto;
+  background: #e5ddd5;
+  background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAABmJLR0QA/wD/AP+gvaeTAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH4AkEEjIZWYgKZQAAAB1pVFh0Q29tbWVudAAAAAAAQ3JlYXRlZCB3aXRoIEdJTVBkLmUHAAAANElEQVQ4y2NgGAWjYBSMglEwCkbBKBgFgwYwovJZUFQwDfqQjRk1ctTIUSNHjRw1ctTIUQAAhYQB8Q0Qk6kAAAAASUVORK5CYII=');
+}
+
+/* Individual messages */
+.message {
+  max-width: 70%;
+  padding: 8px 12px;
+  margin-bottom: 12px;
+  border-radius: 7.5px;
+  line-height: 1.4;
+  position: relative;
+  word-wrap: break-word;
+}
+
+.sent {
+  background: #dcf8c6;
+  margin-left: auto;
+  border-top-right-radius: 0;
+}
+
+.received {
+  background: white;
+  margin-right: auto;
+  border-top-left-radius: 0;
+}
+
+/* Input area */
+.input-container {
+  display: flex;
+  padding: 12px;
+  background: #f0f2f5;
+  border-top: 1px solid #e9ecef;
+}
+
+.message-input {
+  flex: 1;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 21px;
+  font-size: 15px;
+  outline: none;
+  background: white;
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.08);
+}
+
+.send-button {
+  width: 42px;
+  height: 42px;
+  margin-left: 8px;
+  border: none;
+  border-radius: 50%;
+  background: #25D366;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.send-button:hover {
+  background: #128C7E;
+  transform: scale(1.05);
+}
+
+.send-button:active {
+  transform: scale(0.95);
+}
+
+/* Scrollbar styling */
+.messages-container::-webkit-scrollbar {
+  width: 6px;
+}
+
+.messages-container::-webkit-scrollbar-track {
+  background: rgba(0, 0, 0, 0.1);
+}
+
+.messages-container::-webkit-scrollbar-thumb {
+  background: rgba(0, 0, 0, 0.2);
+  border-radius: 3px;
+}
